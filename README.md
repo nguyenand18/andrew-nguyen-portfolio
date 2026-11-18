@@ -23,19 +23,23 @@ Each case study explains the **problem, my contribution, evidence, and limits**.
 
 ```text
 andrew-nguyen-portfolio/
-├── README.md                     # Portfolio landing page
-├── docs/
-│   ├── ecg-ai-buildathon.md      # First-place ECG AI team project
-│   ├── dfs-fraud-analytics.md    # Fraud-modeling academic case
-│   ├── toyota-battery-quality.md # Client discovery and quality-scoping case
-│   └── allegacy-partnership.md  # Partnership KPI and strategy case
+├── index.html                    # Portfolio homepage
+├── resume.html                   # Résumé preview/download page
+├── project-evidence.html         # Detailed project evidence
+├── styles.css                    # Site styles
+├── script.js                     # Navigation and intro-video behavior
+├── docs/                         # Recruiter-facing project case studies
+├── career-assets/
+│   ├── LINKEDIN_COPY.md          # Recommended LinkedIn headline/About copy
+│   └── RESUME_AUDIT.md           # Portfolio résumé review and next steps
 ├── site-content/
-│   └── WEBSITE_COPY.md          # Draft editorial source for website
-├── PUBLISHING.md                # Approval and integration checklist
+│   └── WEBSITE_COPY.md           # Editorial source notes
+├── WEBSITE_SOURCE_STATUS.md      # Media migration status
+├── PUBLISHING.md                 # Approval and integration checklist
 └── .gitignore
 ```
 
-**Current stage:** This repository holds curated project documentation and website copy. The existing [Vercel portfolio](https://andrew-nguyen-portfolio-vercel-1.vercel.app) is a separate live deployment, and its complete static-site code/assets have **not** yet been imported here. Do not assume this repo is a working local build or the active Vercel deployment source.
+**Current stage:** This review branch now includes the portfolio's static HTML/CSS/JS source. Large media files and the downloadable résumé PDF are temporarily served from the existing [Vercel portfolio](https://andrew-nguyen-portfolio-vercel-1.vercel.app), so the repository is not yet fully self-contained. The existing production site remains separate and unchanged.
 
 ## Responsible portfolio use
 
