@@ -4,7 +4,7 @@
 
 I'm a former laboratory scientist now studying business analytics at Wake Forest University. Chemistry taught me to question assumptions, verify results, and explain what the evidence supports. I now apply that same mindset to business analytics, strategy, client projects, and applied AI.
 
-**[Portfolio website](https://andrew-nguyen-portfolio-vercel-1.vercel.app)** · **[LinkedIn](https://www.linkedin.com/in/andrew-nguyen-wfu)** · **[GitHub profile](https://github.com/nguyenand18)**
+**[Portfolio website](https://andrew-nguyen-portfolio-vercel-1.vercel.app)** · **[GitHub profile](https://github.com/nguyenand18)**
 
 **Graduating:** May 2027 · **Seeking:** Full-time roles from June 2027 in business analytics, consulting, strategy, operations, and applied AI
 
