@@ -35,7 +35,7 @@ andrew-nguyen-portfolio/
 └── .gitignore
 ```
 
-**Current stage:** This repository holds curated project documentation and website copy. The existing [Vercel portfolio](https://andrew-nguyen-portfolio-vercel-1.vercel.app) is a separate live deployment, and its complete static-site code/assets have **not** yet been imported here. Do not assume this repo is a working local build or the active Vercel deployment source.
+**Current stage:** This review branch now includes the portfolio's static HTML/CSS/JS source. Large media files and the downloadable résumé PDF are temporarily served from the existing [Vercel portfolio](https://andrew-nguyen-portfolio-vercel-1.vercel.app), so the repository is not yet fully self-contained. The existing production site remains separate and unchanged.
 
 ## Responsible portfolio use
 
