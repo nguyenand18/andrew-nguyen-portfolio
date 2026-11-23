@@ -1,7 +1,15 @@
 # Portfolio media assets
 
-Upload the professional portrait as `assets/andrew-nguyen-professional.jpg`.
+These files were recovered from the prior Vercel portfolio deployment and verified against the SHA-1 values in [asset-sha1-manifest.txt](asset-sha1-manifest.txt).
 
-Keep the original portrait, resume PDF, video poster, HLS player files, and video segments in this directory with their original paths and names. These assets were omitted when the portfolio website moved from direct Vercel deployment to GitHub-backed production.
+The public portfolio includes:
+- `andrew-nguyen-professional.jpg` — professional portrait
+- `andrew-introduction-poster.jpg` — introduction video poster
+- `Andrew_Nguyen_Resume.pdf` — portfolio résumé currently served by the site
+- `video/` — HLS introduction video playlist and segments
+- `vendor/` — HLS player and license
+- Historical NFL project images
 
-This folder is intentionally present so media can be uploaded through the GitHub web interface. Do not commit private client or patient data.
+These are public-facing assets and should not contain private client data or patient records.
+
+When replacing the résumé, confirm the content and all links first. The image, PDF, and video should be referenced by relative `assets/` paths so Git-backed Vercel previews work without the old deployment.
