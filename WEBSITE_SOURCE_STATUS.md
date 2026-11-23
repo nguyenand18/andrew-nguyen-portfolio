@@ -1,22 +1,17 @@
-# Website source status
+# Website source and media status
 
-This branch contains the static HTML/CSS/JS source currently used by Andrew's portfolio website, adapted for Git-backed preview deployments.
+Updated November 23, 2026.
 
-## What is self-contained here
-- `index.html`
-- `resume.html`
-- `project-evidence.html`
-- `styles.css`
-- `script.js`
+## Git-backed source
+- `index.html`, `resume.html`, `project-evidence.html`, `styles.css`, `script.js`
+- `assets/`: professional portrait, résumé PDF, video poster, HLS video playlist/segments, HLS player/license, and historical NFL images
 
-## Temporary external media dependency
-Large/binary assets (resume PDF, portrait image, HLS player file and intro-video segments) are still served from the existing production Vercel project at:
+The assets were recovered from the prior Vercel deployment and checksum-verified before adding them to this review branch. See [assets/asset-sha1-manifest.txt](assets/asset-sha1-manifest.txt).
 
-`https://andrew-nguyen-portfolio-vercel-1.vercel.app`
+The website now uses **relative asset paths**, so previews and future Git-backed production deployments no longer rely on the previous deployment's public domain for media.
 
-This keeps the Git preview visually consistent without moving large media assets in the first migration. The live production site remains the source of those assets until a later media migration.
-
-## Safety and publishing
-- The ECG technical link now points to the public portfolio case study rather than the private competition repository.
-- No production domain should be moved until the Git-backed preview is verified.
-- Do not delete or replace the original Vercel project while this branch depends on its media URLs.
+## Publishing and safety
+- Keep the website's existing production project and URL. Do not delete historical deployments until the recovered Git-backed production release is verified.
+- Team model repositories, client data, patient data and private referral material must remain private.
+- The current portfolio résumé PDF is a recovered prior version, not a claim that the user's latest job-specific résumé has been finalized.
+- After merge, confirm the production deployment includes the media and test actual browser loading for the portrait, PDF, and video.
