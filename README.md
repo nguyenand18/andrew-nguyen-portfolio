@@ -31,7 +31,9 @@ andrew-nguyen-portfolio/
 ├── docs/                         # Recruiter-facing project case studies
 ├── career-assets/
 │   ├── LINKEDIN_COPY.md          # Recommended LinkedIn headline/About copy
-│   └── RESUME_AUDIT.md           # Portfolio résumé review and next steps
+│   ├── RESUME_AUDIT.md           # Portfolio résumé review and next steps
+│   ├── NETWORKING_PLAYBOOK.md   # Recruiting outreach approach and templates
+│   └── PORTFOLIO_QA.md          # Recruiter-facing quality checks
 ├── site-content/
 │   └── WEBSITE_COPY.md           # Editorial source notes
 ├── WEBSITE_SOURCE_STATUS.md      # Media migration status
