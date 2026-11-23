@@ -28,6 +28,7 @@ andrew-nguyen-portfolio/
 ├── project-evidence.html         # Detailed project evidence
 ├── styles.css                    # Site styles
 ├── script.js                     # Navigation and intro-video behavior
+├── assets/                       # Portrait, résumé PDF and video files
 ├── docs/                         # Recruiter-facing project case studies
 ├── career-assets/
 │   ├── LINKEDIN_COPY.md          # Recommended LinkedIn headline/About copy
@@ -41,7 +42,7 @@ andrew-nguyen-portfolio/
 └── .gitignore
 ```
 
-**Current stage:** This review branch now includes the portfolio's static HTML/CSS/JS source. Large media files and the downloadable résumé PDF are temporarily served from the existing [Vercel portfolio](https://andrew-nguyen-portfolio-vercel-1.vercel.app), so the repository is not yet fully self-contained. The existing production site remains separate and unchanged.
+**Current stage:** This repository now includes the website's HTML/CSS/JS and verified, restored portrait, résumé, and video assets. Media references use relative paths so future Git-backed Vercel deployments can serve them directly. The downloadable résumé PDF should still be reviewed before updating it for applications.
 
 ## Responsible portfolio use
 
