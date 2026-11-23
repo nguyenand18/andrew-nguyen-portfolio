@@ -1,0 +1,28 @@
+name: Extract current portfolio resume for comparison
+on:
+  push:
+    branches: [resume-pdf-review-2026-11-23]
+    paths: ['.github/workflows/extract-current-resume.yml']
+permissions:
+  contents: write
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: true
+      - name: Read embedded resume PDF text
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils > /dev/null
+          pdfinfo assets/Andrew_Nguyen_Resume.pdf | grep -E 'Pages:|Page size:'
+          pdftotext -layout assets/Andrew_Nguyen_Resume.pdf career-assets/CURRENT_GITHUB_PDF_EXTRACT.txt
+          test -s career-assets/CURRENT_GITHUB_PDF_EXTRACT.txt
+          wc -l career-assets/CURRENT_GITHUB_PDF_EXTRACT.txt
+      - name: Commit text on review branch
+        run: |
+          git add career-assets/CURRENT_GITHUB_PDF_EXTRACT.txt
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Extract current resume PDF text for review'
+          git push origin HEAD:$GITHUB_REF_NAME
